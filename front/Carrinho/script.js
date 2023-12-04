@@ -3,7 +3,10 @@ const url = 'http://localhost:5000/'
 
 fetch(url + 'Carrinho/valorTotal')
     .then((response) => response.json())
-    .then(json => document.getElementById('valorTotal').textContent = json);
+    .then(json => {
+        document.getElementById('valorTotal').textContent = json.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+        document.getElementById('valorTotal').value = json
+    });
 
 
 fetch(url + 'Carrinho/ver')
@@ -15,8 +18,8 @@ fetch(url + 'Carrinho/ver')
 
             newDiv.innerHTML =
                 `<div class="item">
-        <div class="valor-unidade-item">${item.produto.preco}</div>
-            <div class="valor-total-item">${item.produto.preco * item.quantidade}</div>
+        <div class="valor-unidade-item">${item.produto.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</div>
+            <div class="valor-total-item">${(item.produto.preco * item.quantidade).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</div>
             <div class="quantidade-item">
                 <div class="frame-4">
                 <div class="text-wrapper-2">${item.quantidade}</div>
@@ -139,7 +142,7 @@ function buscarCupom() {
 }
 
 function aplicarCupom() {
-    var valorText = document.getElementById('valorTotal').textContent;
+    var valorText = document.getElementById('valorTotal').value;
     var valor = Number(valorText);
     var desconto = buscarCupom();
 
@@ -149,5 +152,5 @@ function aplicarCupom() {
     }
     var valorAjustado = valor * (1 - desconto);
 
-    document.getElementById('valorDesconto').textContent = valorAjustado.toFixed(2);
+    document.getElementById('valorDesconto').textContent = valorAjustado.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 }

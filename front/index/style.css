@@ -10,12 +10,12 @@
 .index .div {
   background-color: #f9c9ae;
   width: -webkit-fill-available;
-  height: 1600px;
+  height: 1700px;
   position: relative;
 }
 
 .index .frame-promo {
-  left: 950px;
+  left: 1053px;
   display: flex;
   flex-wrap: wrap;
   width: 764px;
@@ -165,13 +165,13 @@
   display: flex;
   flex-wrap: wrap;
   width: 817px;
-  height: 860px;
+  height: fit-content;
   align-items: flex-start;
   gap: 30px 30px;
   position: absolute;
   top: 220px;
   justify-content: flex-start;
-  flex-direction: row;
+  flex-direction: row
 }
 
 .index .item-popu {
@@ -187,14 +187,14 @@
 }
 
 .index .overlap {
-  width: 1843px;
+  position: fixed;
+  width: 1920px;
   height: 220px;
   top: 0;
+  left: 0;
   background-image: url(./img/s2-cupcackes-1.png);
   background-size: cover;
   background-position: 50% 50%;
-  position: fixed;
-  left: 0;
 }
 
 .index .menu-superior {
@@ -238,7 +238,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start
 }
 
@@ -277,6 +277,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: flex-start;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: flex-start
 }

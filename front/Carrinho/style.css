@@ -346,9 +346,9 @@
 .cart .frame-valor-total {
   display: inline-flex;
   align-items: flex-start;
-  gap: 307px;
+  gap: 280px;
   position: absolute;
-  top: 84px;
+  top: 50px;
   left: 24px;
 }
 
@@ -453,6 +453,12 @@ body {
   line-height: var(--title-16px-regular-line-height);
   white-space: nowrap;
   font-style: var(--title-16px-regular-font-style);
-  top: 50px;
+  top: 88px;
   left: 22px;
 }
+
+#valorDesconto{
+  left: 380px;
+  top:65px;  
+  }
+

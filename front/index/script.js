@@ -22,7 +22,7 @@ fetch(`${url}Produto/buscarTodos`)
               <div class="frame">
                 <div class="text-wrapper-2">${product.nomeProduto}</div>
                 <div class="div-wrapper">
-                  <div class="text-wrapper-3">${product.preco} R$</div>
+                  <div class="text-wrapper-3">${product.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</div>
                 </div>
               </div>
             `;
@@ -47,7 +47,7 @@ fetch(`${url}Produto/buscarTodos`)
               <div class="frame">
                 <div class="text-wrapper-2">${product.nomeProduto}</div>
                 <div class="div-wrapper">
-                  <div class="text-wrapper-3">${product.preco} R$</div>
+                  <div class="text-wrapper-3">${product.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</div>
                 </div>
               </div>
             `;

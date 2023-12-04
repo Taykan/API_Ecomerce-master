@@ -187,14 +187,14 @@
 }
 
 .index .overlap {
-  width: 1843px;
+  position: fixed;
+  width: 1920px;
   height: 220px;
   top: 0;
+  left: 0;
   background-image: url(./img/s2-cupcackes-1.png);
   background-size: cover;
   background-position: 50% 50%;
-  position: fixed;
-  left: 0;
 }
 
 .index .menu-superior {

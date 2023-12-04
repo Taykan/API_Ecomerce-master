@@ -165,7 +165,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 817px;
-  height: 860px;
+  height: fit-content;
   align-items: flex-start;
   gap: 30px 30px;
   position: absolute;

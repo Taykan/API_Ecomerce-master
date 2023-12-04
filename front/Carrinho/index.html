@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cart">
+    <div class="div">
+      <div class="frame-pagina">
+        <div class="frame-items">
+          <div class="cabecalho-itens">
+            <div class="frame-alinhamento">
+              <div class="text-wrapper">Item</div>
+              <div class="text-wrapper">Preço</div>
+              <div class="text-wrapper">Quantidade</div>
+              <div class="text-wrapper">Total</div>
+            </div>
+          </div>
+          <div id="container"></div>
+          <div class="frame-baixo">
+            <div class="frame-cupom">
+              <div class="nome-c-upom">
+                <input class="text-wrapper-4" id="cupom" placeholder="CUPOM"></input>
+              </div>
+              <button class="button">
+                <div class="boto-aplicar-cupom">
+                  <div class="text-wrapper-5" onclick="aplicarCupom()">Aplicar Cupom</div>
+                </div>
+              </button>
+            </div>
+            <div class="frame-total-carrinho">
+              <div class="text-wrapper-6">Total do carrinho</div>
+              <div class="frame-valor-total">
+                <div class="text-wrapper">Valor total:</div>
+                <div class="text-wrapper" id="valorTotal"></div>
+              </div>
+              <div class="text-wrapper-7">Valor Desconto:</div>
+              <div class="text-wrapper" id="valorDesconto"></div>
+              <div class="btm-finalizar-compra" onclick="finalizarCompra()">
+                <div class="text-wrapper-5">Finalizar compra</div>
+              </div>
+              <div class="under-line"><img class="line" src="img/line-1.svg" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-2">
+          <div class="menu-superior">
+            <a href="../carrinho/index.html"> <img class="cart-2" src="img/cart.png" /></a>
+            <a href="../cadastro-login/index.html"><img class="icone-usuario" src="img/icone-usuario.png" /></a>
+          </div>
+          <a href="../index/index.html"><img class="logo-home" src="img/logo-home.png" /></a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>

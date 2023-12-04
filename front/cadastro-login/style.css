@@ -1,0 +1,182 @@
+.cadastro-login {
+  background-color: #f9c9ae;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.cadastro-login .div {
+  background-color: #f9c9ae;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cadastro-login .frame-cadastro-login {
+  display: flex;
+  width: 1920px;
+  align-items: center;
+  justify-content: center;
+  gap: 129px;
+  position: absolute;
+  top: 375px;
+  left: 0;
+}
+
+.cadastro-login .frame-cadastro {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 27px 30px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--destaque);
+  padding-top: 33px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 15px;
+  box-shadow: var(--categogy-20);
+}
+
+.cadastro-login .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--heading-36px-medium-font-family);
+  font-weight: var(--heading-36px-medium-font-weight);
+  color: var(--text-2);
+  font-size: var(--heading-36px-medium-font-size);
+  letter-spacing: var(--heading-36px-medium-letter-spacing);
+  line-height: var(--heading-36px-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--heading-36px-medium-font-style);
+}
+
+.cadastro-login .text-wrapper-2 {
+  position: relative;
+  width: 360px;
+  opacity: 0.4;
+  font-family: var(--title-16px-regular-font-family);
+  font-weight: var(--title-16px-regular-font-weight);
+  color: var(--text-2);
+  font-size: var(--title-16px-regular-font-size);
+  letter-spacing: var(--title-16px-regular-letter-spacing);
+  line-height: var(--title-16px-regular-line-height);
+  font-style: var(--title-16px-regular-font-style);
+}
+
+.cadastro-login .img {
+  position: relative;
+  width: 370px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.cadastro-login .btn-criar-conta {
+  position: relative;
+  width: 371px;
+  flex: 0 0 auto;
+}
+
+.cadastro-login .frame-login {
+  display: inline-flex;
+  flex-direction: column;
+  height: 288px;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 27px 30px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--destaque);
+  padding-top: 33px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 15px;
+  box-shadow: var(--categogy-20);
+}
+
+.cadastro-login .text-wrapper-3 {
+  position: relative;
+  width: 101px;
+  height: 33px;
+  font-family: var(--heading-36px-medium-font-family);
+  font-weight: var(--heading-36px-medium-font-weight);
+  color: var(--text-2);
+  font-size: var(--heading-36px-medium-font-size);
+  letter-spacing: var(--heading-36px-medium-letter-spacing);
+  line-height: var(--heading-36px-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--heading-36px-medium-font-style);
+}
+
+.cadastro-login .btn-logar {
+  position: relative;
+  width: 371px;
+  height: 56px;
+}
+
+.cadastro-login .overlap-group {
+  position: fixed;
+  width: 1920px;
+  height: 220px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/s2-cupcackes-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.cadastro-login .menu-superior {
+  display: flex;
+  width: 195px;
+  height: 101px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  position: absolute;
+  top: 60px;
+  left: 1526px;
+}
+
+.cadastro-login .cart {
+  position: relative;
+  width: 81px;
+  height: 82px;
+}
+
+.cadastro-login .icone-usuario {
+  position: relative;
+  width: 83px;
+  height: 82px;
+}
+
+.cadastro-login .logo-home {
+  position: absolute;
+  width: 174px;
+  height: 171px;
+  top: 19px;
+  left: 132px;
+  object-fit: cover;
+}
+
+button {
+  border: 0px;
+  background-color: rgba(255, 255, 255, 1);
+  cursor:pointer;
+}
+
+@media screen and (max-width: 1919px){
+  .cadastro-login{
+    overflow-x: visible;
+  } 
+}
+
+body {
+  background-color: #f9c9ae;
+  overflow: hidden;
+}

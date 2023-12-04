@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cadastro-login">
+    <div class="div">
+      <div class="frame-cadastro-login">
+        <div class="frame-cadastro">
+          <div class="text-wrapper">Cadastro</div>
+          <input class="text-wrapper-2" placeholder="Nome" id="nomeCadastro"></input>
+          <input class="text-wrapper-2" placeholder="Endereço" id="enderecoCadastro"></input>
+          <input class="text-wrapper-2" placeholder="Email" id="emailCadastro"></input>
+          <input type="password" class="text-wrapper-2" placeholder="Senha" id="senhaCadastro"></input>
+          <button class="button" onclick="registrar()">
+            <img class="button" src="img/btn-criar-conta.png" />
+          </button>
+        </div>
+        <div class="frame-login">
+          <div class="text-wrapper-3">Login</div>
+          <input class="text-wrapper-2" placeholder="Email" id="emailLogin"></input>
+          <input type="password" class="text-wrapper-2" placeholder="Senha" id="senhaLogin"></input>
+          <button class="button" onclick="logar()">
+            <img class="btn-logar" src="img/btn-logar.png" />
+          </button>
+        </div>
+      </div>
+      <div class="overlap-group">
+        <div class="menu-superior">
+          <a href="../carrinho/index.html"> <img class="cart-2" src="img/cart.png" /></a>
+          <a href="../cadastro-login/index.html"><img class="icone-usuario" src="img/icone-usuario.png" /></a>
+        </div>
+        <a href="../index/index.html"><img class="logo-home" src="img/logo-home.png" /></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="script.js"></script>
